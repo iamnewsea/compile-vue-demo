@@ -1,5 +1,8 @@
 # 编译vue单文件组件
 
+1. yarn
+2. webpack
+3. 打开 entry.webpack.html 页面
 
 ### 背景
 
