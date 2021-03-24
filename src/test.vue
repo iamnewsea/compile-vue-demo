@@ -19,3 +19,9 @@
   	}
   }
 </script>
+
+<style scoped>
+/deep/ span{
+  color:blue;
+}
+</style>

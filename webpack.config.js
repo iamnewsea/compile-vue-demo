@@ -26,11 +26,19 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'css-loader'
+        use: [ 'vue-style-loader', 'css-loader']
       },
       {
         test: /\.js$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader',
+        ]
       }
     ]
   },

@@ -12,7 +12,7 @@
 </head>
 <body>
   <div id="app">
-  	<hello />
+    <div id="con"></div>
   </div>
 
   <script>
@@ -22,8 +22,8 @@
         hello: 'hello'
       },
       created() {},
-      components:{
-      	hello: hello.default
+      mounted(){
+        new Vue({ render: h=> h(hello.default)}).$mount("#con")
       }
     });
   </script>
