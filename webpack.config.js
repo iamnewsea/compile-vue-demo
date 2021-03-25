@@ -11,12 +11,12 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
   entry: './src/hello.vue',
   output: {
-    filename: 'bundle.js',
+    filename: 'hello.js',
     path: path.resolve(__dirname, './dist'),
     library: 'hello',
     //libraryTarget: 'umd'
   },
-  mode: 'development',
+  mode: 'production',
   devtool: 'none',
   module: {
     rules: [
